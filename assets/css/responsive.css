@@ -1,0 +1,43 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+/* Mobile */
+@media (max-width: 739px) {
+    #header{
+        overflow: hidden;
+    }
+
+    #header .nav-menu{
+        display: block;
+    }
+
+    #header .nav-search{
+        display: none;
+    }
+    
+    .nav > li{
+        display: block;
+    }
+
+    .nav .sub-nav{
+        position: initial;
+        background-color: #333;
+    }
+
+    .sub-nav li a{
+        color: #fff;
+        padding: 6px 74px;
+    }
+
+    .nav > li:first-child{
+        display: inline-block;
+    }
+
+
+}

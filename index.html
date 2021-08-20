@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -20,15 +21,19 @@
                 <li><a href="#">
                     MORE
                     <i class="arrow-down ti-angle-down"></i>
+                </a>
                     <ul class="sub-nav">
-                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Merchandise</a></li>            
                         <li><a href="#">Extras</a></li>
                         <li><a href="#">Media</a></li>
                     </ul>
-                </a></li>
+                </li>
             </ul>
             <div class="nav-search">
                 <i class="ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="nav-menu">
+                <i class="icon-menu ti-menu"></i>
             </div>
         </div>
         <!-- Slider -->
@@ -165,5 +170,31 @@
             </div>
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight
+        // Đóng/mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        } 
+        //Tự động đóng khi mở menu
+        var menuItems = document.querySelectorAll('.nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav');
+                if (!isParentMenu){
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
