@@ -1,9 +1,15 @@
 /* PC */
+<<<<<<< HEAD
 @media (min-width: 1024px) {
+=======
+@media (min-width: 1024px){
+
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+<<<<<<< HEAD
 }
 /* Mobile */
 @media (max-width: 739px) {
@@ -79,3 +85,41 @@
     margin-top: 8px;
   }
 }
+=======
+
+}
+/* Mobile */
+@media (max-width: 739px) {
+    #header{
+        overflow: hidden;
+    }
+
+    #header .nav-menu{
+        display: block;
+    }
+
+    #header .nav-search{
+        display: none;
+    }
+    
+    .nav > li{
+        display: block;
+    }
+
+    .nav .sub-nav{
+        position: initial;
+        background-color: #333;
+    }
+
+    .sub-nav li a{
+        color: #fff;
+        padding: 6px 74px;
+    }
+
+    .nav > li:first-child{
+        display: inline-block;
+    }
+
+
+}
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e

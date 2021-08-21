@@ -42,7 +42,12 @@ html {
   width: 33.33333%;
 }
 
+<<<<<<< HEAD
 #main {
+=======
+#main{
+    
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 #header {
@@ -54,8 +59,16 @@ html {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .nav-menu {
   display: none;
+=======
+
+
+.nav-menu{
+   display: none;
+   
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 .nav li {
@@ -77,6 +90,7 @@ html {
   background-color: #ccc;
 }
 
+<<<<<<< HEAD
 .nav .sub-nav {
   display: none;
   background-color: #fff;
@@ -98,6 +112,26 @@ html {
 
 .nav li:hover .sub-nav {
   display: block;
+=======
+
+.nav .sub-nav{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.sub-nav li{
+    display: block;
+}
+
+.sub-nav li a{
+    color: black;
+    min-width: 160px;
+    padding-left: 16px;
+    line-height: 38px;
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 .arrow-down {
@@ -113,6 +147,7 @@ html {
   padding: 0 24px;
 }
 
+<<<<<<< HEAD
 .ti-search,
 .ti-menu {
   color: #fff;
@@ -131,6 +166,35 @@ html {
 .nav-search:hover {
   background-color: #f44336;
   cursor: pointer;
+=======
+.nav-search,
+.nav-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.ti-search,
+.ti-menu{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600px;
+}
+
+.nav-menu:hover{
+    background-color: #ccc;
+}
+
+.nav-menu:hover .ti-menu{
+    color: #000;
+}
+
+.nav-search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 /* Slider */
@@ -171,12 +235,21 @@ html {
 
 .the-band-section,
 .tour-section,
+<<<<<<< HEAD
 .contact-section {
   padding: 64px 16px;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
   max-width: 100%;
+=======
+.contact-section{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+>>>>>>> 336eee2bf8efc84b9f1e8a57e000c45a5b1ca80e
 }
 
 .heading-content {
