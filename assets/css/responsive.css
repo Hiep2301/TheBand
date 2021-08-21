@@ -74,6 +74,10 @@
     text-align: center;
   }
 
+  .contact-content .infor li{
+      padding: 4px;
+  }
+
   .contact-content .contact__input-name,
   .contact-content .contact__input-email {
     margin-top: 8px;
